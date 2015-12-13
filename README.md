@@ -1,7 +1,7 @@
 # NBSVM
-SInce I still receive a good number of emails 4 years later,
+Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
-instructions better. The code is still just as bad.
+instructions better. The code itself is unchanged (still just as bad).
 
 For technical details see [our paper](wang12simple.pdf) and
 [our talk](wang12simple_slides.pdf).
@@ -47,9 +47,9 @@ to try a more complex model.
   and p>>n.
 - Despite a number of highly cited papers that experimented on these same
   datasets, I'm unsure if any of the complicated, deep learning models
-  today are doing significantly more than bag of words.
+  today are doing significantly more than bag of words on these datasets.
   Available compute power, engineering competence in addition to that no one
-  tries very hard anymore pushing other models to the available compute power are some causes for concern.
+  tries very hard anymore pushing other models to the available compute power / hardware are some reasons for concern.
 - These models run in few seconds or less, and
   behaves predictably for a different test distribution.
 - Another [example](http://arxiv.org/abs/1512.02167) of bag of words going strong in 2015.

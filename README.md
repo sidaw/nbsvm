@@ -2,24 +2,8 @@
 Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
 instructions better. The code itself is unchanged (still just as bad).
-
-Grégoire Mesnil implemented nbsvm in python:
-[https://github.com/mesnilgr/nbsvm](https://github.com/mesnilgr/nbsvm).
-It runs on the large IMDB dataset with a single script.
-
-For technical details see [our paper](wang12simple.pdf) and
-[our talk](wang12simple_slides.pdf).
-
-```
-@inproceedings{wang12simple, 
-author = {Wang, Sida I. and Manning, Christopher D.}, 
-booktitle = {Proceedings of the ACL}, 
-title = {Baselines and Bigrams: Simple, Good Sentiment and Topic Classification}, 
-year = {2012}, 
-booktitle = {ACL (2)}, 
-pages = {90-94} 
-} 
-```
+Luckily, there are [several other implementations](#other-implementations) in various languages,
+which are a.s. better!
 
 ## Running NBSVM
 - Download the data and override the empty data directory in root: "data/rt10662/unigram_rts.mat"
@@ -55,7 +39,25 @@ converting to bag-of-words vector right away. This resulted in some
 unnecessary mess for this work, but might make it easier if you want
 to try a more complex model.
 
+## Other implementations
+
+Please consider submitting a pull request or shoot me an email if you used NBSVM in your work!
+
+- https://github.com/mesnilgr/nbsvm, Python implementation by Grégoire Mesnil, It runs on the large IMDB dataset with a single script and the results are described in their [ICLR 2015 paper](http://arxiv.org/abs/1412.5335)
+- https://github.com/dpressel/nbsvm-xl, Java implementation by Daniel Pressel, using SGD.
+- https://github.com/lrei/nbsvm, Python implementation by Luis Rei, multiclass
+- https://github.com/tkng/rakai, a go implementation by tkng, probably imcomplete
+- http://d.hatena.ne.jp/jetbead/20140916/1410798409, Perl! unfortunately cant read Japanese
+
+It appears to be used in these kaggle entries:
+
+- https://github.com/vinhkhuc/kaggle-sentiment-popcorn
+- https://github.com/tjflexic/kaggle-word2vec-movie-reviews
+
+
 ## Comments
+- It is deeply humbling to see others finding this work helpful. 
+  I would have been more euthusiastic improving this work if I knew earlier. Thanks.
 - While many experiments have been ran for this task, performance is
   really all about regularization, and even the simplest model (Naive
   Bayes) would fit the training set perfectly. As far as I know, there is no good
@@ -71,3 +73,20 @@ to try a more complex model.
 - These models run in few seconds or less, and
   behaves predictably for a different test distribution.
 - Another [example](http://arxiv.org/abs/1512.02167) of bag of words going strong in 2015.
+
+For technical details see [our paper](wang12simple.pdf) and
+[our talk](wang12simple_slides.pdf).
+
+```
+@inproceedings{wang12simple, 
+author = {Wang, Sida I. and Manning, Christopher D.}, 
+booktitle = {Proceedings of the ACL}, 
+title = {Baselines and Bigrams: Simple, Good Sentiment and Topic Classification}, 
+year = {2012}, 
+booktitle = {ACL (2)}, 
+pages = {90-94} 
+} 
+```
+
+
+

@@ -1,12 +1,12 @@
 # NBSVM
 Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
-instructions better. The code itself is unchanged (still just as bad).
+instructions better. The code itself is unchanged.
 Luckily, there are [several other implementations](#other-implementations) in various languages,
-which are a.s. better!
+which are a.s. better.
 
 ## Running NBSVM
-- Download the data and override the empty data directory in root: "data/rt10662/unigram_rts.mat"
+- Download the data and override the empty data directory in root: for example, you should have "ROOT/data/rt10662/unigram_rts.mat" if this file is at  "ROOT/README.MD"
 - Go to src and run the script master.m to produce the results from the paper
 - Results and details are logged in resultslog.txt and details.txt, respectively
 - A table with all the results is printed, like:
@@ -40,7 +40,7 @@ Please consider submitting a pull request or shoot me an email if you used NBSVM
 - https://github.com/mesnilgr/nbsvm, Python implementation by Grégoire Mesnil, It runs on the large IMDB dataset with a single script and the results are described in their [ICLR 2015 paper](http://arxiv.org/abs/1412.5335)
 - https://github.com/dpressel/nbsvm-xl, Java implementation by Daniel Pressel, using SGD.
 - https://github.com/lrei/nbsvm, Python implementation by Luis Rei, multiclass
-- https://github.com/tkng/rakai, a go implementation by tkng, probably imcomplete
+- https://github.com/tkng/rakai, a Go implementation by tkng, probably imcomplete
 - http://d.hatena.ne.jp/jetbead/20140916/1410798409, Perl! unfortunately cant read Japanese
 
 It appears to be used in these kaggle entries:

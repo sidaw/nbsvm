@@ -106,7 +106,7 @@ Andrew M. Dai, Quoc V. Le. Semi-supervised Sequence Learning. NIPS 2015.
 Stefan Wager, Sida Wang, and Percy Liang. Dropout Training as Adaptive Regularization. NIPS 2013
 -  We got 91.98% using unlabeled data with logistic regression and bigrams.
 
-(please pull request if you want something added or changed)
+(please submit pull request if you want something added or changed)
 
 MIT license: [here](LICENSE.MD)
 

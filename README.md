@@ -69,7 +69,7 @@ to try a more complex model.
   - Available compute power, engineering competence, and software infrastructure are vastly better for neural models
   - Difference in enthusiasm level: no one seems to try very hard pushing basic models to the available compute power / hardware 
   - These factors makes it difficult to judge whats going on.
-- These models run in few seconds or less, and
+- Bag of words models run in few seconds or less, and
   behaves predictably for a different test distribution.
 - Another [example](http://arxiv.org/abs/1512.02167) of bag of words going strong in 2015.
 

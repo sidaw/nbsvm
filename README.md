@@ -90,8 +90,9 @@ pages = {90-94}
 } 
 ```
 
-## Other notable references
-Mostly working on the largest dataset of the batch (IMDB), where maybe regularization is not as important. Our result was 91.22% correct. We got 91.98% using unlabelled data in "Dropout Training as Adaptive Regularization" under logistic regression.
+## IMDB comparisons
+
+These works compare with the largest dataset of the batch (IMDB), where maybe regularization is not as important. Our result was 91.22% correct.
 
 Quoc V. Le, Tomas Mikolov. Distributed Representations of Sentences and Documents. 2014.
 - Got 92.58%, no released code, the paper below reports that the results were not reproduced.
@@ -100,7 +101,10 @@ Grégoire Mesnil, Tomas Mikolov, Marc'Aurelio Ranzato, Yoshua Bengio. Ensemble o
 - Their implementation of NBSVM actually got better than us at 91.87%, and their best number is 92.57% with some ensembling.
 
 Andrew M. Dai, Quoc V. Le. Semi-supervised Sequence Learning. NIPS 2015.
-- 92.76% with additional data.
+- 92.76% with additional unlabeled data.
+
+Stefan Wager, Sida Wang, and Percy Liang. Dropout Training as Adaptive Regularization. NIPS 2013
+-  We got 91.98% using unlabeled data with logistic regression and bigrams.
 
 (please pull request if you want something added or changed)
 

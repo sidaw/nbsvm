@@ -11,14 +11,15 @@ which are a.s. better!
 - Results and details are logged in resultslog.txt and details.txt, respectively
 - A table with all the results is printed, like:
 
+
 ```
 AthR	XGraph	BbCrypt	CR	IMDB	MPQA	RT-2k	RTs	subj	
-85.13	91.19	99.40	79.97	86.59	86.27	85.85	79.03	93.56	
-84.99	89.96	99.29	79.76	83.55	85.29	83.45	77.94	92.58	
-83.73	86.17	97.68	80.85	89.16	86.72	87.40	77.72	91.74	
-82.61	85.14	98.29	79.02	86.95	86.15	86.25	76.23	90.84	
-87.66	90.68	99.50	81.75	91.22	86.32	89.45	79.38	93.18	
-87.94	91.19	99.70	80.45	88.29	85.25	87.80	78.05	92.40	
+85.13	91.19	99.40	79.97	86.59	86.27	85.85	79.03	93.56	MNB-bigram
+84.99	89.96	99.29	79.76	83.55	85.29	83.45	77.94	92.58	MNB-unigram
+83.73	86.17	97.68	80.85	89.16	86.72	87.40	77.72	91.74	SVM-bigram
+82.61	85.14	98.29	79.02	86.95	86.15	86.25	76.23	90.84	SVM-unigram
+87.66	90.68	99.50	81.75	91.22	86.32	89.45	79.38	93.18	NBSVM-bigram
+87.94	91.19	99.70	80.45	88.29	85.25	87.80	78.05	92.40	SVM-unigram
 ```
 
 ## The data
@@ -56,22 +57,24 @@ to try a more complex model.
 
 
 ## Comments
-- It is deeply humbling and encouraging for me to see others finding this work helpful and implementing it. 
 - While many experiments have been ran for this task, performance is
   really all about regularization, and even the simplest model (Naive
   Bayes) would fit the training set perfectly. As far as I know, there is no good
   theory for why things even work in this case of non-sparse weights
   and p>>n.
-- Despite a number of highly cited papers that experimented on these same
-  datasets, it is unclear if any of the complicated, deep learning models
+- It is unclear if any of the complicated deep learning models
   today are doing significantly more than bag of words on these datasets:
   - As far as I know, none of these results are impressively better (usually about 1%)
-  - Available compute power, engineering competence, and software infrastructure are vastly better for neural models
+  - Available compute power, engineering competence, and software infrastructure are vastly better for deep learning
   - Difference in enthusiasm level: no one seems to try very hard pushing basic models to the available compute power / hardware 
-  - These factors makes it difficult to judge whats going on.
 - Bag of words models run in few seconds or less, and
   behaves predictably for a different test distribution.
+- It is very encouraging for me to see others finding this work helpful and implementing it. 
 - Another [example](http://arxiv.org/abs/1512.02167) of bag of words going strong in 2015.
+
+
+## References
+
 
 For technical details see [our paper](wang12simple.pdf) and
 [our talk](wang12simple_slides.pdf).
@@ -86,6 +89,20 @@ booktitle = {ACL (2)},
 pages = {90-94} 
 } 
 ```
+
+## Other notable references
+Mostly working on the largest dataset of the batch (IMDB), where maybe regularization is not as important. Our result was 91.22% correct. We got 91.98% using unlabelled data in "Dropout Training as Adaptive Regularization" under logistic regression.
+
+Quoc V. Le, Tomas Mikolov. Distributed Representations of Sentences and Documents. 2014.
+- Got 92.58%, no released code, the paper below reports that the results were not reproduced.
+
+Grégoire Mesnil, Tomas Mikolov, Marc'Aurelio Ranzato, Yoshua Bengio. Ensemble of Generative and Discriminative Techniques for Sentiment Analysis of Movie Reviews. ICLR 2015
+- Their implementation of NBSVM actually got better than us at 91.87%, and their best number is 92.57% with some ensembling.
+
+Andrew M. Dai, Quoc V. Le. Semi-supervised Sequence Learning. NIPS 2015.
+- 92.76% with additional data.
+
+(please pull request if you want something added or changed)
 
 MIT license: [here](LICENSE.MD)
 

@@ -3,9 +3,9 @@ Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
 instructions better. The code itself is unchanged (still just as bad).
 
-Perhaps what's easier, Grégoire Mesnil implemented nbsvm in python:
-
+Grégoire Mesnil implemented nbsvm in python:
 [https://github.com/mesnilgr/nbsvm](https://github.com/mesnilgr/nbsvm).
+It runs on the large IMDB dataset with a single script.
 
 For technical details see [our paper](wang12simple.pdf) and
 [our talk](wang12simple_slides.pdf).

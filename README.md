@@ -6,7 +6,7 @@ Luckily, there are [several other implementations](#other-implementations) in va
 which are a.s. better.
 
 ## Running NBSVM
-- Download the data and override the empty data directory in root: for example, you should have "./data/rt10662/unigram_rts.mat" if the README is at  "./README.MD"
+- Download the data and override the empty data directory in root: for example, you should have "./data/rt10662/unigram_rts.mat" if this readme has pass  "./README.MD"
 - Go to src and run the script master.m to produce the results from the paper
 - Results and details are logged in resultslog.txt and details.txt, respectively
 - A table with all the results is printed, like:

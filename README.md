@@ -6,7 +6,7 @@ Luckily, there are [several other implementations](#other-implementations) in va
 which are a.s. better.
 
 ## Running NBSVM
-- Download the data and override the empty data directory in root: for example, you should have "ROOT/data/rt10662/unigram_rts.mat" if this file is at  "ROOT/README.MD"
+- Download the data and override the empty data directory in root: for example, you should have "./data/rt10662/unigram_rts.mat" if the README is at  "./README.MD"
 - Go to src and run the script master.m to produce the results from the paper
 - Results and details are logged in resultslog.txt and details.txt, respectively
 - A table with all the results is printed, like:
@@ -106,7 +106,7 @@ Andrew M. Dai, Quoc V. Le. Semi-supervised Sequence Learning. NIPS 2015.
 Stefan Wager, Sida Wang, and Percy Liang. Dropout Training as Adaptive Regularization. NIPS 2013
 -  We got 91.98% using unlabeled data with logistic regression and bigrams.
 
-(please submit pull request if you want something added or changed)
+(please submit a pull request if you want something added or changed)
 
 MIT license: [here](LICENSE.MD)
 

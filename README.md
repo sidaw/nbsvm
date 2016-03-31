@@ -3,7 +3,7 @@ Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
 instructions better. The code itself is unchanged.
 Luckily, there are [several other implementations](#other-implementations) in various languages,
-which are a.s. better.
+which are better. I tried [Grégoire Mesnil's implementation](https://github.com/mesnilgr/nbsvm) on this [CodaLab worksheet](https://worksheets.codalab.org/worksheets/0x9a76d02d4c8f4b0380de28f60c165f1f/).
 
 ## Running NBSVM
 - Download the data and override the empty data directory in root: for example, you should have "./data/rt10662/unigram_rts.mat" if this readme has pass  "./README.MD"

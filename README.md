@@ -1,7 +1,7 @@
 # NBSVM
 Since I still receive a good number of emails about this project 4 years later,
 I decided to put this code on github and write the
-instructions better. The code itself is unchanged.
+instructions better. The code itself is unchanged, in matlab, and not that great.
 Luckily, there are [several other implementations](#other-implementations) in various languages,
 which are better. For example, I used [Grégoire Mesnil's implementation](https://github.com/mesnilgr/nbsvm) on this [CodaLab worksheet](https://worksheets.codalab.org/worksheets/0x9a76d02d4c8f4b0380de28f60c165f1f/) and got slightly better results than we originally did.
 
